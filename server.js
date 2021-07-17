@@ -14,15 +14,15 @@ const saltRounds = 10;
 
 const salt = bcrypt.genSaltSync(saltRounds);
 
-const db = knex({
-    client: 'pg',
-    connection: {
-        host: '127.0.0.1',
-        user: 'postgres',
-        password: 'leantan@7525',
-        database: 'smartbrain'
-    }
-});
+// const db = knex({
+//     client: 'pg',
+//     connection: {
+//         host: '127.0.0.1',
+//         user: 'postgres',
+//         password: 'leantan@7525',
+//         database: 'smartbrain'
+//     }
+// });
 
 // console.log(postgres.select('*').from('users'));
 const path = require('path');
