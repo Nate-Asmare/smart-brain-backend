@@ -26,7 +26,7 @@ const handleRegister = (req, res, db, bcrypt, salt) => {
         .then(trx.commit)
         .catch(trx.rollback)
     })
-    
+    .catch(err => res.status(400).json('unable to register'))
     // res.json(database.users[database.users.length-1]);
 }
 
