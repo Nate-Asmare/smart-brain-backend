@@ -16,9 +16,9 @@ const salt = bcrypt.genSaltSync(saltRounds);
 
 const db = knex({
     client: 'pg',
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-      rejectUnauthorized: false
+    connection: {
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
     }
     // connection: {
     //     host : '127.0.0.1',
