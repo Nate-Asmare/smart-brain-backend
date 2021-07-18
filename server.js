@@ -20,6 +20,12 @@ const db = knex({
     ssl: {
       rejectUnauthorized: false
     }
+    // connection: {
+    //     host : '127.0.0.1',
+    //     user : 'postgres',
+    //     password : 'leantan@7525',
+    //     database : 'smartbrain'
+    // }
 });
 
 // console.log(postgres.select('*').from('users'));
